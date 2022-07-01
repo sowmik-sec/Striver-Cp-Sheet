@@ -16,32 +16,7 @@ public class AssigningToClasses {
                 a[i] = in.nextInt();
             }
             Arrays.sort(a);
-            /*
-            int mx = Integer.MIN_VALUE;
-            int index = -1;
-            int ans = -1;
-            for (int i = 1; i < n*2; i++) {
-                int temp = a[i] - a[i-1];
-                if(temp>mx) {
-                    mx = temp;
-                    index = i;
-                }
-            }
-            System.out.println(index);
-            for(int num:a) System.out.print(num+" ");
-            System.out.println();
-            if((index%2==1)) {
-                for (int i = 1; i < index; i++) {
-                    ans = Math.max(ans,a[i]-a[i-1]);
-                }
-                for (int i = index+1; i < n*2; i++) {
-                    ans = Math.max(ans,a[i]-a[i-1]);
-                }
-                System.out.println(ans);
-            }
-            else System.out.println(mx);
-             */
-
+            
             ArrayList<Integer> list1 = new ArrayList<>();
             ArrayList<Integer> list2 = new ArrayList<>();
             if(n%2==1) {
